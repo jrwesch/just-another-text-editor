@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "16.15.0"
+  },
   "scripts": {
     "start:dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run server\"",
     "start": "npm run build && cd server && node server.js",
@@ -16,7 +19,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "serve": "13.0.2"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
